@@ -17,7 +17,7 @@ Attributes
 Key|Type|Description|Default
 ---|----|-----------|-------
 ['ansible']['download_url']|String|Location of Ansible Tower tarball to install|http://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz
-['ansible']['server_name']|String|Name for Tower|tower
+['ansible']['server_name']|String|Name for Tower|`node['fqdn']`
 ['ansible']['tower']['admin_password']|String|Tower Admin Password|AWsecret
 ['ansible']['postgres']['admin_password']|String|Postgres Admin Password|password
 ['ansible']['rabbitmq']['admin_password']|String|Rabbit MQ Admin Password|AWXbunnies

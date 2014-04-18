@@ -3,7 +3,7 @@
 default['ansible']['download_url'] = 'http://releases.ansible.com/ansible-tow'\
                                      'er/setup/ansible-tower-setup-latest.tar'\
                                      '.gz'
-default['ansible']['server_name'] = 'tower'
+default['ansible']['server_name'] = node['fqdn']
 
 default['ansible']['tower']['admin_password'] = 'AWsecret'
 default['ansible']['postgres']['admin_password'] = 'password'
